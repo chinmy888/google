@@ -1,0 +1,151 @@
+/* rslides */
+.rslides{
+	position:relative;
+	list-style:none;
+	overflow:hidden;
+	width:100%;
+	padding:0;
+	margin:0;
+}
+.rslides li{
+	-webkit-backface-visibility:hidden;
+	position:absolute;
+	display:none;
+	width:100%;
+	left:0;
+	top:0; margin: 0px; padding: 0px
+}
+.rslides li:first-child{
+	position:relative;
+	display:block;
+	float:left;
+}
+.rslides img{
+	display:block;
+	height:auto;
+	float:left;
+	width:100%;
+	border:0; vertical-align: top
+}
+.rslides li a{display: inline}
+/*pager*/
+.callbacks_tabs.callbacks1_tabs{margin:0px; position:absolute;z-index:50; bottom:60px; width: 100%;float: left}
+.callbacks_tabs.callbacks1_tabs li{display:inline-block;width:15px;height:15px;margin-left:15px;border-radius:15px;position:relative; text-indent: -99999}
+.callbacks_tabs.callbacks1_tabs li a{display:inline-block;width:15px;height:15px;border-radius:15px;position:absolute; left:0; z-index:40; color:transparent; background:#fff;}
+.callbacks_tabs.callbacks1_tabs li.callbacks_here a{background:#0072d3;text-indent: -99999}
+@media screen and (max-width:1500px){
+.callbacks_tabs.callbacks1_tabs{margin:0px; position:absolute;z-index:50; bottom:30px; width: 100%;float: left}
+.callbacks_tabs.callbacks1_tabs li{display:inline-block;width:15px;height:15px;margin-left:10px;border-radius:15px;position:relative;}
+.callbacks_tabs.callbacks1_tabs li a{display:inline-block;width:15px;height:15px;border-radius:10px;position:absolute; left:0; z-index:40; color:transparent; background:#fff}	
+	
+}
+@media screen and (max-width:1050px){
+.callbacks_tabs.callbacks1_tabs{margin:0px; position:absolute;z-index:17; bottom:30px; width: 100%;float: left}
+.callbacks_tabs.callbacks1_tabs li{display:inline-block;width:10px;height:10px;margin-left:10px;border-radius:15px;position:relative;}
+.callbacks_tabs.callbacks1_tabs li a{display:inline-block;width:10px;height:10px;border-radius:10px;position:absolute; left:0; z-index:40; color:transparent; background:#fff}	
+	
+}
+@media screen and (max-width:600px){
+	.callbacks_tabs.callbacks1_tabs{margin:0px; position:absolute;z-index:50; bottom:15px; width: 100%;float: left}
+
+}
+
+/* Callback example */
+.callbacks_container{
+	position:relative;
+	width:100%;
+	max-width:100%;
+	text-align:center;
+}
+
+.callbacks{
+	position:relative;
+	list-style:none;
+	overflow:hidden;
+	width:100%;
+	padding:0;
+	margin:0;
+}
+.callbacks li{
+	position:absolute;
+	width:100%;
+	left:0;
+	top:0;
+}
+.callbacks img{
+	display:block;
+	position:relative;
+	z-index:1;
+	height:auto;
+	width:100%;
+	border:0;
+}
+.callbacks .caption{
+	display:block;
+	position:absolute;
+	z-index:2;
+	font-size:20px;
+	text-shadow:none;
+	color:#fff;
+	background:#000;
+	background:rgba(0,0,0, .8);
+	left:0;
+	right:0;
+	bottom:0;
+	padding:10px 20px;
+	margin:0;
+	max-width:none;
+}
+.callbacks_nav{
+	position:absolute;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	top:50%;
+	left:0;
+	z-index:3;
+	text-indent:-9999px;
+	overflow:hidden;
+	text-decoration:none;
+	height:50px;
+	width:50px;
+	background:url("../images/themes.png") no-repeat left top;
+	border-radius:50%;
+-webkit-transform: translateY(-50%);
+-moz-transform: translateY(-50%);
+transform: translateY(-50%);
+}
+
+
+.callbacks_container:hover .callbacks_nav{display:block;}
+.callbacks_nav:active{opacity:1.0;}
+.callbacks_nav.next{
+	left:auto;
+	background-position:right top;
+	right:2%;
+}
+.callbacks_nav.prev{
+	left:auto;
+	background-position:left top;
+	left:2%;
+}
+
+.callbacks_nav.prev:hover{background:#0072d3 url("../images/themes1.png") no-repeat left top; }
+.callbacks_nav.next:hover{background:#0072d3 url("../images/themes1.png") no-repeat right top; }
+
+@media screen and (max-width:1300px){
+.callbacks_nav{height:40px;width:40px;background:url("../images/themes.png") no-repeat left center; background-size:80px auto}
+	
+.callbacks_nav.prev:hover{background:#0072d3 url("../images/themes1.png") no-repeat left center; background-size:80px auto}
+.callbacks_nav.next:hover{background:#0072d3 url("../images/themes1.png") no-repeat right center;  background-size:80px auto}
+
+}
+
+
+@media screen and (max-width:1000px){
+.callbacks_nav{height:30px;width:30px;background:url("../images/themes.png") no-repeat left center; background-size:60px auto}
+	
+.callbacks_nav.prev:hover{background:#0072d3 url("../images/themes1.png") no-repeat left center; background-size:60px auto}
+.callbacks_nav.next:hover{background:#0072d3 url("../images/themes1.png") no-repeat right center;  background-size:60px auto}
+
+}
+
+
