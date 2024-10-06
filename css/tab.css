@@ -1,0 +1,48 @@
+
+/* 选项卡*/
+
+.details_nav{overflow: hidden;width:100%; border-bottom:#ddd 1px solid; margin-bottom:0px}
+.details_nav ul{ margin:0px; padding:0px;}
+.details_nav li{width:35%; float:left; margin-right:10px;text-align:center;}
+.details_nav a{color: #333333;font-size:18px; height:40px;font-weight:bold;line-height:40px; text-decoration:none;text-align:center;} 
+.details_active a,.details_nav li:hover a{height:40px;display: block;color:#fff;font-size:18px;background:#E70000; line-height:40px; text-decoration:none; text-align:center}
+
+
+.detailsa_nav{overflow: hidden;width:50%; margin:0 auto;margin-bottom:30px}
+.detailsa_nav ul{ margin:0px; padding:0px;}
+.detailsa_nav li{width:25%; float:left;text-align:center;}
+.detailsa_nav a{color: #333333;font-size:16px; height:40px;font-weight:bold;line-height:40px; text-decoration:none;text-align:center;} 
+.detailsa_active a,.detailsa_nav li:hover a{height:38px;display: block;color:#EB0113;font-size:16px; border:1px solid #EB0113;line-height:38px; text-decoration:none; text-align:center; border-radius:20px}
+
+
+
+
+.synopsis{overflow: hidden; height:auto}
+
+.synopsisbox{ overflow:hidden; padding-top:5px}
+
+
+
+
+@media only screen and (max-width:768px) {
+.details_nav{overflow: hidden;width:100%;}
+.details_nav ul{ margin:0px; padding:0px;}
+.details_nav li{width:35%; float:left;}
+.details_nav a{color: #333333;font-size:16px; height:40px;font-weight:bold;line-height:40px } 
+.details_active a,.details_nav li:hover a{height:40px;display: block;color:#fff;font-size:16px;background:#E70000; line-height:40px;}
+
+.detailsa_nav{overflow: hidden;width:60%; margin:0 auto;margin-bottom:10px}
+.detailsa_nav ul{ margin:0px; padding:0px;}
+.detailsa_nav li{width:25%; float:left;text-align:center;}
+.detailsa_nav a{color: #333333;font-size:16px; height:40px;font-weight:bold;line-height:40px } 
+.detailsa_active a,.detailsa_nav li:hover a{height:38px;display: block;color:#EB0113;font-size:16px; border:1px solid #EB0113;line-height:38px; text-decoration:none; text-align:center; border-radius:20px}
+
+}
+
+
+@media only screen and (max-width:600px) {
+.detailsa_nav{overflow: hidden;width:100%; margin:0 auto;margin-bottom:10px}
+.detailsa_nav a{color: #333333;font-size:14px; height:34px;font-weight:bold;line-height:34px } 
+.detailsa_active a,.detailsa_nav li:hover a{height:32px;display: block;color:#EB0113;font-size:14px; border:1px solid #EB0113;line-height:32px; text-decoration:none; text-align:center; border-radius:16px}
+
+}
